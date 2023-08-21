@@ -42,9 +42,15 @@
       "not op_mini all"
     ],
     "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+      "last 10 chrome version",
+      "last 10 firefox version",
+      "last 10 safari version"
     ]
+  },
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "react-router-dom": "^6.15.0",
+    "sass": "^1.66.1",
+    "sass-loader": "^13.3.2"
   }
 }
