@@ -1,7 +1,5 @@
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
+//Google Font Imports
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
