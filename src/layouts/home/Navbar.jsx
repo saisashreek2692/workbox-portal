@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ListItem from "../../components/ListItem";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -62,17 +63,17 @@ const Navbar = () => {
               </nav>
             </div>
             <div className="justify-end hidden pr-16 sm:flex lg:pr-0">
-              <a
-                href="/#"
+              <Link
+                to="/auth/login"
                 className="py-3 text-base font-medium px-7 text-dark hover:text-primary">
                 Sign in
-              </a>
+              </Link>
 
-              <a
-                href="/#"
+              <Link
+                to="/auth/register"
                 className="py-3 text-base font-medium text-white rounded-lg bg-primary px-7 hover:bg-opacity-90">
                 Sign Up
-              </a>
+              </Link>
             </div>
           </div>
         </div>
