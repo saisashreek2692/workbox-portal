@@ -1,11 +1,14 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Main } from "./layouts/index";
 
 function App() {
   return (
-    <>
-      <h1>Hello World!!</h1>
-      <p>Welcome To React World</p>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Main />} exact />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
